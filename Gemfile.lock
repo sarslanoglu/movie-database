@@ -117,6 +117,7 @@ GEM
     parallel (1.19.1)
     parser (2.7.0.4)
       ast (~> 2.4.0)
+    power_assert (1.1.5)
     puma (4.3.3)
       nio4r (~> 2.0)
     puma (4.3.3-java)
@@ -170,14 +171,14 @@ GEM
     rspec-mocks (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
-    rspec-rails (3.9.1)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-core (~> 3.9.0)
-      rspec-expectations (~> 3.9.0)
-      rspec-mocks (~> 3.9.0)
-      rspec-support (~> 3.9.0)
+    rspec-rails (4.0.0.beta3)
+      actionpack (>= 4.2)
+      activesupport (>= 4.2)
+      railties (>= 4.2)
+      rspec-core (~> 3.8)
+      rspec-expectations (~> 3.8)
+      rspec-mocks (~> 3.8)
+      rspec-support (~> 3.8)
     rspec-support (3.9.2)
     rubocop (0.80.1)
       jaro_winkler (~> 1.5.1)
@@ -222,6 +223,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    test-unit (3.3.4)
+      power_assert
     thor (1.0.1)
     thread_safe (0.3.6)
     thread_safe (0.3.6-java)
@@ -234,6 +237,7 @@ GEM
     tzinfo-data (1.2019.3)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.6.1)
+    vcr (5.1.0)
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -267,15 +271,17 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.1)
   rails-controller-testing
-  rspec-rails
+  rspec-rails (= 4.0.0.beta3)
   rubocop-rails
   sass-rails (>= 6)
   simplecov
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
+  test-unit
   turbolinks (~> 5)
   tzinfo-data
+  vcr (~> 5.1.0)
   web-console (>= 3.3.0)
   webpacker (~> 4.0)
 
