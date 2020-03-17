@@ -1,0 +1,39 @@
+<div class = "container">
+  <h1>Batman Movies</h1>
+
+  <%= form_tag movies_path, method: :get do %>
+    <% if @total_result == 0 %>
+      <th>Sorry there is no movie</th>
+    <% elsif @total_result == 1 %>
+      <th><%= @total_result %> movie is found</th>
+    <% else%>
+      <th><%= @total_result %> movies are found</th>
+    <% end %>
+
+    <th>-- <%= @total_pages %> page/pages found, select page</th>
+    <%= select_tag :page, options_for_select(1..@total_pages, @selected_page), onchange: "this.form.submit();" %>
+  <% end %>
+
+  <table>
+    <tr>
+      <th>Movie Poster</th>
+      <th>Title</th>
+      <th>Release Year</th>
+      <th>Imdb Id</th>
+      <th>Content type</th>
+    </tr>
+    <% @movies.each do |item| %>
+      <tr>
+        <% if item['Poster'] == 'N/A' %>
+          <td><%= image_tag "http://placekitten.com/200/300", size: "200x300" %></td>
+        <% else %>
+          <td><%= image_tag item['Poster'], size: "200x300" %></td>
+        <% end %>
+        <td><%= item['Title'] %></td>
+        <td><%= item['Year'] %></td>
+        <td><%= item['imdbID'] %></td>
+        <td><%= item['Type'] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
