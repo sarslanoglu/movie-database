@@ -252,7 +252,7 @@ GEM
     tzinfo-data (1.2020.6)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.0.0)
-    vcr (5.1.0)
+    vcr (6.0.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -298,7 +298,7 @@ DEPENDENCIES
   test-unit
   turbolinks (~> 5)
   tzinfo-data
-  vcr (~> 5.1.0)
+  vcr (~> 6.0.0)
   web-console (>= 3.3.0)
   webpacker (~> 5.2)
 
