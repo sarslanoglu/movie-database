@@ -40,7 +40,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Testing framework for Ruby on Rails
-  gem 'rspec-rails', '4.0.0.beta3'
+  gem 'rspec-rails', '4.0.2'
   # A RuboCop extension focused on enforcing Rails best practices and coding conventions.
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec'
