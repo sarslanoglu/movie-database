@@ -124,9 +124,9 @@ GEM
     parser (3.0.0.0)
       ast (~> 2.4.1)
     power_assert (1.2.0)
-    puma (4.3.7)
+    puma (5.1.1)
       nio4r (~> 2.0)
-    puma (4.3.7-java)
+    puma (5.1.1-java)
       nio4r (~> 2.0)
     racc (1.5.2)
     racc (1.5.2-java)
@@ -284,7 +284,7 @@ DEPENDENCIES
   faraday
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.5)
-  puma (~> 4.1)
+  puma (~> 5.1)
   rails (~> 6.1.1)
   rails-controller-testing
   rspec-rails (= 4.0.2)
